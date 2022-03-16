@@ -15,4 +15,5 @@ public class GitHubTest {
         $(byText("Soft assertions")).should(Condition.visible).click();
         $(".application-main ").shouldHave(text("Using JUnit5 extend test class:"));
     }
+    //комментарий для третьего коммита
 }
