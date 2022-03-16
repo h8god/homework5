@@ -12,7 +12,7 @@ public class GitHubTest {
         open("https://github.com/selenide");
         $(byTitle("selenide")).click();
         $("#wiki-tab").click();
-        $(byText("Soft assertions")).should(Condition.exist).click();
+        $(byText("Soft assertions")).should(Condition.visible).click();
         $(".application-main ").shouldHave(text("Using JUnit5 extend test class:"));
     }
 }
